@@ -78,8 +78,9 @@ export default function Layout() {
         "fixed md:sticky top-0 left-0 z-50 h-screen w-64 bg-emerald-950 text-white transition-transform duration-300 ease-in-out flex flex-col shadow-2xl",
         isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
       )} style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0)', backgroundSize: '24px 24px' }}>
-        <div className="p-6 flex items-center justify-between">
+        <div className="p-6 flex flex-col items-start justify-between">
           <h1 className="text-xl font-bold tracking-tight">PROJECT BA NA HILLS 4 LAND</h1>
+          <p className="text-[10px] text-emerald-400/70 font-mono mt-1">by Phan Dinh Tin</p>
           <button className="md:hidden" onClick={() => setIsSidebarOpen(false)}>
             <X size={24} />
           </button>
